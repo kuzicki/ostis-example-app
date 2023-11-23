@@ -33,6 +33,9 @@ public:
 
   SC_PROPERTY(Keynode("empty_set"), ForceCreate)
   static ScAddr empty_set;
+  
+  SC_PROPERTY(Keynode("question_lab"), ForceCreate)
+  static ScAddr question_lab;
 };
 
 }  // namespace exampleModule
