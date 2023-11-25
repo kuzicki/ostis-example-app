@@ -1,6 +1,8 @@
 project (ostis-example-app)
 cmake_minimum_required (VERSION 2.8)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS true)
+
 set(SC_MACHINE_PATH "${CMAKE_CURRENT_LIST_DIR}/ostis-web-platform/sc-machine")
 include("${SC_MACHINE_PATH}/CMakeLists.txt")
 
