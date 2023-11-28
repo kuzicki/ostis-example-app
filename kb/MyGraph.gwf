@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/role" idtf="beg" shapeColor="193" id="2641322826736" parent="0" left="0" top="0" right="37" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="712" y="72" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/role" idtf="beginV" shapeColor="193" id="2641322826736" parent="0" left="0" top="0" right="37" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="712" y="72" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/role" idtf="end" shapeColor="0" id="2641322832144" parent="0" left="0" top="0" right="37" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="951" y="66" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/role" idtf="endV" shapeColor="0" id="2641322832144" parent="0" left="0" top="0" right="37" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="951" y="66" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/struct" idtf="MyGraph" shapeColor="0" id="2641322829440" parent="0" left="0" top="0" right="80" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="831" y="83" haveBus="false" idtf_pos="0">

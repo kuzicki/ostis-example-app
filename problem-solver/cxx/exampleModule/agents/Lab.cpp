@@ -159,12 +159,6 @@ public:
 
     void getLongestPath(string node, int currSum = 0)
 	{
-		cout << "now " << node << endl;
-		cout << "path: " << endl;
-		for (auto& elem : curPath) {
-			cout << elem << ", ";
-		}
-		cout << endl;
 		string nd = node;
 		if (visited[nd]) {
 			curPath.pop_back();
@@ -276,14 +270,12 @@ void addGraph(const std::unique_ptr<ScMemoryContext>& context, ScAddr element, G
 }
 
 void run_graph(const std::unique_ptr<ScMemoryContext>& context, ScAddr sourceVertex) {
-  std::cout << "Run" << std::endl;
   Graph* gr = new Graph;
   ScAddr beginVertex, endVertex;
   ScAddr begin, end;
-  begin = context->HelperResolveSystemIdtf("beg", ScType::NodeConstRole);
-  end = context->HelperResolveSystemIdtf("end", ScType::NodeConstRole);
+  begin = context->HelperResolveSystemIdtf("beginV", ScType::NodeConstRole);
+  end = context->HelperResolveSystemIdtf("endV", ScType::NodeConstRole);
   string node1, node2;
-  cout << "begin" << endl;
   ScIterator5Ptr beginIt = context->Iterator5(sourceVertex,
  			ScType::EdgeAccessConstPosPerm,
  			ScType::NodeConst,
@@ -294,8 +286,6 @@ void run_graph(const std::unique_ptr<ScMemoryContext>& context, ScAddr sourceVer
     node1 = context->HelperGetSystemIdtf(beginVertex);
     printEl(context, beginVertex);
   }
-
-  cout << "end" << endl;
   ScIterator5Ptr endIt = context->Iterator5(sourceVertex,
  			ScType::EdgeAccessConstPosPerm,
  			ScType::NodeConst,
@@ -306,7 +296,6 @@ void run_graph(const std::unique_ptr<ScMemoryContext>& context, ScAddr sourceVer
     node2 = context->HelperGetSystemIdtf(endVertex);
     printEl(context, endVertex);
   }
-  cout << "ok" << endl;
 
   ScIterator3Ptr nodes_it = context->Iterator3(sourceVertex, ScType::EdgeAccessConstPosPerm, ScType::Node);
   while (nodes_it->Next()) {
