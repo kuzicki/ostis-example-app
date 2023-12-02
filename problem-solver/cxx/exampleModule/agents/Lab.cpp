@@ -273,7 +273,7 @@ void run_graph(const std::unique_ptr<ScMemoryContext>& context, ScAddr sourceVer
   Graph* gr = new Graph;
   ScAddr beginVertex, endVertex;
   ScAddr begin, end;
-  begin = context->HelperResolveSystemIdtf("beginV", ScType::NodeConstRole);
+  begin = context->HelperResolveSystemIdtf("begV", ScType::NodeConstRole);
   end = context->HelperResolveSystemIdtf("endV", ScType::NodeConstRole);
   string node1, node2;
   ScIterator5Ptr beginIt = context->Iterator5(sourceVertex,
